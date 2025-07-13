@@ -57,7 +57,7 @@ export const Admin: React.FC = () => {
             <div className="p-4 bg-red-500/20 rounded-full w-fit mx-auto mb-4">
               <Lock className="text-red-400" size={32} />
             </div>
-            <h1 className="text-2xl font-bold text-white mb-2">Admin Access</h1>
+            <h1 className="text-2xl font-bold text-white mb-2">Admin Access<br />Only Murari Manikanta Can Access this</h1>
             <p className="text-gray-300">Enter password to access admin panel</p>
           </div>
 
@@ -112,6 +112,7 @@ export const Admin: React.FC = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-8">
+          {/* Add Certificate Form */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -169,28 +170,30 @@ export const Admin: React.FC = () => {
                   className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white"
                   placeholder="https://example.com/certificate.jpg"
                 />
-{formData.imageUrl && (
-  <div className="mt-4">
-    {/\.(pdf)$/i.test(formData.imageUrl) ? (
-      <iframe
-        src={formData.imageUrl}
-        title="PDF Preview"
-        className="w-full h-64 rounded-lg border border-white/20"
-      />
-    ) : /\.(jpg|jpeg|png|gif|webp)$/i.test(formData.imageUrl) ? (
-      <img
-        src={formData.imageUrl}
-        alt="Certificate Preview"
-        className="rounded-lg border border-white/20 max-w-full h-auto"
-      />
-    ) : (
-      <div className="text-gray-300 text-sm italic">
-        Unsupported file type. Please provide a valid image or PDF URL.
-      </div>
-    )}
-  </div>
-)}
-
+                {formData.imageUrl && (
+                  <div className="mt-4 space-y-2">
+                    <p className="text-sm text-gray-300">
+                      <strong>Path:</strong> {formData.imageUrl}
+                    </p>
+                    {/\.(pdf)$/i.test(formData.imageUrl) ? (
+                      <iframe
+                        src={formData.imageUrl}
+                        title="PDF Preview"
+                        className="w-full h-64 rounded-lg border border-white/20"
+                      />
+                    ) : /\.(jpg|jpeg|png|gif|webp)$/i.test(formData.imageUrl) ? (
+                      <img
+                        src={formData.imageUrl}
+                        alt="Certificate Preview"
+                        className="rounded-lg border border-white/20 max-w-full h-auto"
+                      />
+                    ) : (
+                      <div className="text-gray-300 text-sm italic">
+                        Unsupported file type. Please provide a valid image or PDF URL.
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
 
               <div>
@@ -219,6 +222,7 @@ export const Admin: React.FC = () => {
             </form>
           </motion.div>
 
+          {/* Current Certificates */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -256,6 +260,18 @@ export const Admin: React.FC = () => {
                     </div>
                   </div>
                 ))}
+              </div>
+            )}
+
+            {/* Debug List of All Paths */}
+            {certificates.length > 0 && (
+              <div className="mt-8 bg-white/5 p-4 rounded-lg border border-white/10 text-sm text-gray-300">
+                <h2 className="font-semibold text-white mb-2">All Stored Paths:</h2>
+                <ul className="list-disc pl-6 space-y-1">
+                  {certificates.map((cert) => (
+                    <li key={cert.id}>{cert.imageUrl}</li>
+                  ))}
+                </ul>
               </div>
             )}
           </motion.div>
