@@ -16,7 +16,7 @@ export const Projects: React.FC = () => {
     {
       title: "Family Visit Tracker",
       description: "A mobile application for tracking family visits accross the world.",
-      image: "/dist/assets/images/country_visit.png",
+      image: "/images/country_visit.png",
       technologies: ["Express", "node.js", "CSS", "PostgreSQL"],
       githubUrl: "https://github.com/murarimanikanta27/Country_Visit_website",
       liveUrl: "https://github.com/murarimanikanta27/Country_Visit_website",
@@ -25,7 +25,7 @@ export const Projects: React.FC = () => {
         {
       title: "Precision Agriculture Farming using IoT(Major Project)",
       description: "Developed a smart farming system using ESP32 and Blynk IoT for remote monitoring. Used Facebook’s Prophet model for crop prediction ,future crop prediction with Randomforest and optimized irrigation based on weather and soil conditions. Displayed paddy crop growth stages on Blynk IoT for real-time tracking.",
-      image: "/dist/assets/images/precisionagriculture.jpg",
+      image: "/images/precisionagriculture.jpg",
       technologies: ["iot","C++", "arduino","esp32","OPPS","prophet", "Blynk IoT","Espnow","Randomforest"],
       githubUrl: "https://github.com/murarimanikanta27/Bluetooth-Rc-Car-with-3sp32",
       liveUrl: "https://youtube.com/shorts/kR77am5m9bo?si=FaryDkKVBiM1SDu2",
@@ -34,7 +34,7 @@ export const Projects: React.FC = () => {
     {
       title: "Simon Game",
       description: "A fun and interactive Simon Game built with React.",
-      image: "/dist/assets/images/Simon.png",
+      image: "/images/Simon.png",
       technologies: ["jquery","CSS", "html", "Bootstrap"],
       githubUrl: "https://github.com/murarimanikanta27/SimonGame",
       liveUrl: "https://murarimanikanta27.github.io/SimonGame/",
@@ -43,7 +43,7 @@ export const Projects: React.FC = () => {
     {
       title: "Drum Kit",
       description: "A fun and interactive Drum Kit built with JavaScript.",
-      image: "/dist/assets/images/DrumKit.png",
+      image: "/images/DrumKit.png",
       technologies: ["javascript","CSS", "html", "Bootstrap"],
       githubUrl: "https://github.com/murarimanikanta27/Drum-Kit",
       liveUrl: "https://murarimanikanta27.github.io/Drum-Kit/",
@@ -52,7 +52,7 @@ export const Projects: React.FC = () => {
     {
       title: "NotePad",
       description: "A fun and interactive Notepad built with JavaScript.",
-      image: "/dist/assets/images/Notepad.png",
+      image: "/images/Notepad.png",
       technologies: ["javascript","CSS", "html", "React js","React Components"],
       githubUrl: "https://github.com/murarimanikanta27/Notepad",
       liveUrl: "https://github.com/murarimanikanta27/Notepad",
@@ -88,7 +88,7 @@ export const Projects: React.FC = () => {
           {
       title: "Wireless door authentication system using esp32 arduinouno and Nrf24lo1",
       description: "Developed a biometric-based security system using Arduino Uno, Fingerprint Module, and NRF24L01 for secure access control over a 1.2 km range",
-      image: "/dist/assets/images/wirelessdoor.png",
+      image: "/images/wirelessdoor.png",
       technologies: ["iot","C++", "arduino","esp32","NRF24l01","OPPS"],
       githubUrl: "https://github.com/murarimanikanta27/Wireless-Door-Authenticator-with-NRF24L01-Keypad-and-Fingerprint-Sensor",
       liveUrl: "https://www.youtube.com/watch?v=DMtDtZ8513k",
