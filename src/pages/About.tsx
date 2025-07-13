@@ -12,6 +12,20 @@ export const About: React.FC = () => {
   return (
     <div className="min-h-screen pt-24 px-4">
       <div className="max-w-6xl mx-auto">
+        {/* Profile Photo */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="flex justify-center mb-8"
+        >
+          <img
+            src="images/gitam_photo.jpg" // Make sure this image is in your public folder
+            alt="Murari Manikanta Chowdary T"
+            className="w-40 h-40 object-cover rounded-full border-4 border-yellow-400 shadow-lg"
+          />
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -56,10 +70,9 @@ export const About: React.FC = () => {
               className="mt-6"
             >
               <a
-                href="/RESUME1.1.pdf"
+                href="/public/RESUME1.1.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                
                 className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-500 to-yellow-400 hover:from-yellow-600 hover:to-yellow-500 text-black font-semibold rounded-lg transition-all duration-300"
               >
                 <FileText size={20} className="mr-2" />
