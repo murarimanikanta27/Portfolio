@@ -50,14 +50,14 @@ export const Certificates: React.FC = () => {
             <p className="text-gray-400">Certificates will appear here once added to the JSON file.</p>
           </motion.div>
         ) : (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {certificates.map((certificate, index) => (
               <motion.div
                 key={certificate.id}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20"
+                className="bg-white/10 backdrop-blur-lg rounded-2xl p-4 sm:p-6 border border-white/20"
               >
                 {certificate.imageUrl && (
                   <div
@@ -67,11 +67,14 @@ export const Certificates: React.FC = () => {
                     {isPDF(certificate.imageUrl) ? (
                       <div className="relative w-full h-48 rounded-lg overflow-hidden bg-white">
                         <iframe
-                          src={certificate.imageUrl}
+                          src={certificate.imageUrl + "#toolbar=0"}
                           title="PDF Preview"
-                          className="absolute top-0 left-0 w-full h-full scale-[1.6] origin-top"
+                          className="absolute top-0 left-0 w-full h-full"
                           style={{ pointerEvents: 'none', border: 'none', background: 'white' }}
                         />
+                        <div className="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">
+                          {decodeURIComponent(certificate.imageUrl.split('/').pop() || '')}
+                        </div>
                       </div>
                     ) : (
                       <img
@@ -85,7 +88,7 @@ export const Certificates: React.FC = () => {
 
                 <div className="flex items-start mb-3">
                   <Award className="text-yellow-500 mr-3 mt-1" size={20} />
-                  <h3 className="text-xl font-semibold text-white">{certificate.title}</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold text-white">{certificate.title}</h3>
                 </div>
 
                 <div className="flex items-center mb-4">
