@@ -1,13 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Award, Building, X } from 'lucide-react';
-import { useCertificates } from '../context/CertificateContext';
 
 const isPDF = (url: string) => url?.toLowerCase().endsWith('.pdf');
 
+interface Certificate {
+  id: string;
+  title: string;
+  issuer: string;
+  description: string;
+  imageUrl: string;
+}
+
 export const Certificates: React.FC = () => {
-  const { certificates } = useCertificates();
+  const [certificates, setCertificates] = useState<Certificate[]>([]);
   const [fullscreenFile, setFullscreenFile] = useState<string | null>(null);
+
+  useEffect(() => {
+    fetch('/certificates.json')
+      .then(res => res.json())
+      .then(data => setCertificates(data))
+      .catch(err => console.error('Error loading certificates:', err));
+  }, []);
 
   return (
     <div className="min-h-screen pt-24 px-4">
@@ -33,7 +47,7 @@ export const Certificates: React.FC = () => {
           >
             <Award size={64} className="text-gray-400 mx-auto mb-4" />
             <h3 className="text-2xl font-semibold text-gray-300 mb-2">No certificates yet</h3>
-            <p className="text-gray-400">Certificates will appear here once they are added through the admin panel.</p>
+            <p className="text-gray-400">Certificates will appear here once added to the JSON file.</p>
           </motion.div>
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -48,7 +62,7 @@ export const Certificates: React.FC = () => {
                 {certificate.imageUrl && (
                   <div
                     className="mb-4 overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105"
-                    onClick={() => setFullscreenFile(certificate.imageUrl!)}
+                    onClick={() => setFullscreenFile(certificate.imageUrl)}
                   >
                     {isPDF(certificate.imageUrl) ? (
                       <div className="relative w-full h-48 rounded-lg overflow-hidden bg-white">
@@ -86,7 +100,6 @@ export const Certificates: React.FC = () => {
         )}
       </div>
 
-      {/* Fullscreen Modal */}
       <AnimatePresence>
         {fullscreenFile && (
           <motion.div
