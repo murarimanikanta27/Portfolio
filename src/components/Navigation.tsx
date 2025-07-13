@@ -13,7 +13,7 @@ export const Navigation: React.FC = () => {
     { path: '/awards', label: 'Awards', icon: BookOpen },
     { path: '/projects', label: 'Projects', icon: Briefcase },
     { path: '/contact', label: 'Contact', icon: Phone },
-    { path: '/admin', label: 'Admin', icon: User },
+    
   ];
 
   const toggleMenu = () => setIsOpen(!isOpen);
