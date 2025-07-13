@@ -60,7 +60,7 @@ export const Home: React.FC = () => {
             >
               <div className="w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden border-4 border-yellow-400 shadow-2xl">
   <img
-    src="/public/images/1723995194290 1.jpg"
+    src="/images/1723995194290 1.jpg"
     alt="Profile"
     className="w-full h-full object-cover"
   />
