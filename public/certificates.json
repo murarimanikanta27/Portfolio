@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "title": "Embedded Systems Certification",
+    "issuer": "NPTEL",
+    "description": "Completed 8-week online course on Embedded Systems",
+    "imageUrl": "Certificates/Full Stack.pdf"
+  },
+  {
+    "id": "2",
+    "title": "React Developer",
+    "issuer": "Udemy",
+    "description": "React full-stack web development bootcamp",
+    "imageUrl": "Certificates/React Cert.png"
+  },
+  {
+    "id": "3",
+    "title": "IoT Automation with ESP32",
+    "issuer": "Robic World",
+    "description": "Built a smart automation system using ESP32 and MQTT",
+    "imageUrl": "/assets/certificates/iot_esp32.jpg"
+  }
+]
