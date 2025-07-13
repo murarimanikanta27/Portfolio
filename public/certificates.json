@@ -26,5 +26,12 @@
     "issuer": "EduSkills",
     "description": "Certificate of virtual internship by Eduskills",
     "imageUrl": "Certificates/embeddedSystem.pdf"
+  },
+    {
+    "id": "5",
+    "title": "Summer Term Internship Under Faculty",
+    "issuer": "Gitam",
+    "description": "We build Advanceed Smart home automation",
+    "imageUrl": "Certificates/summer.pdf"
   }
 ]
