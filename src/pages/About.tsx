@@ -56,7 +56,7 @@ export const About: React.FC = () => {
               className="mt-6"
             >
               <a
-                href="/public/RESUME1.1.pdf"
+                href="/RESUME1.1.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 
