@@ -3,28 +3,28 @@
     "id": "1",
     "title": "The Complete Full-Stack Web Development Bootcamp",
     "issuer": "Udemy",
-   "description":"I have completed full-stack web development from Udemy, with duration of 61.5 hours"
+    "description": "I have completed full-stack web development from Udemy, with duration of 61.5 hours",
     "imageUrl": "Certificates/Full Stack.pdf"
   },
   {
     "id": "2",
     "title": "DSA in C++",
     "issuer": "PrepInsta",
-    "description": "DSA\nin C++ from Preplnsta Technologies PVT. LTD the course completion\nCertification",
+    "description": "DSA in C++ from Preplnsta Technologies PVT. LTD the course completion Certification",
     "imageUrl": "Certificates/DSA_C++.pdf"
   },
   {
     "id": "3",
     "title": "DataBase Management System",
     "issuer": "PrepInsta",
-    "description": "DBMS\nfrom Preplnsta Technologies PVT. LTD the course completion\nCertification.",
+    "description": "DBMS from Preplnsta Technologies PVT. LTD the course completion Certification.",
     "imageUrl": "Certificates/DBMS.pdf"
-  }
+  },
   {
     "id": "4",
     "title": "Embedded System Developer Virtual Internship",
     "issuer": "EduSkills",
-    "description":"Certificate of virtual internship by Eduskills",
+    "description": "Certificate of virtual internship by Eduskills",
     "imageUrl": "Certificates/embeddedSystem.pdf"
   }
 ]
