@@ -3,12 +3,12 @@
     "id": "1",
     "title": "The Complete Full-Stack Web Development Bootcamp",
     "issuer": "Udemy",
-   description:"I have completed full-stack web development from Udemy, with duration of 61.5 hours"
+   "description":"I have completed full-stack web development from Udemy, with duration of 61.5 hours"
     "imageUrl": "Certificates/Full Stack.pdf"
   },
   {
     "id": "2",
-    "title": "DSA in C++"",
+    "title": "DSA in C++",
     "issuer": "PrepInsta",
     "description": "DSA\nin C++ from Preplnsta Technologies PVT. LTD the course completion\nCertification",
     "imageUrl": "Certificates/DSA_C++.pdf"
