@@ -7,7 +7,6 @@ import { Certificates } from './pages/Certificates';
 import { Awards } from './pages/Awards';
 import { Projects } from './pages/Projects';
 import { Contact } from './pages/Contact';
-import { Admin } from './pages/Admin';
 import { CertificateProvider } from './context/CertificateContext';
 
 function App() {
@@ -23,7 +22,7 @@ function App() {
             <Route path="/awards" element={<Awards />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/admin" element={<Admin />} />
+            
           </Routes>
         </div>
       </Router>
