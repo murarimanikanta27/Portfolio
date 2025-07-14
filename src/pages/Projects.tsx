@@ -28,7 +28,7 @@ export const Projects: React.FC = () => {
       image: "/images/precisionagriculture.jpg",
       technologies: ["iot","C++", "arduino","esp32","OPPS","prophet", "Blynk IoT","Espnow","Randomforest"],
       githubUrl: "https://github.com/murarimanikanta27/Bluetooth-Rc-Car-with-3sp32",
-      liveUrl: "https://youtube.com/shorts/kR77am5m9bo?si=FaryDkKVBiM1SDu2",
+      liveUrl: "https://github.com/murarimanikanta27/Precision-agriculture-farming",
       category: "IOT"
     },
     {
