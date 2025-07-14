@@ -82,7 +82,7 @@ export const Projects: React.FC = () => {
       image: "https://content.instructables.com/FT3/MVJC/J0COJU8F/FT3MVJCJ0COJU8F.jpg?auto=webp",
       technologies: ["iot","C++", "arduino","esp32","NRF24l01","OPPS"],
       githubUrl: "https://github.com/murarimanikanta27/RC-Car-with-the-range-1.2km",
-      liveUrl: "https://youtube.com/shorts/rI42KHt-OA8?si=K7cMRRTArEPDJMgR",
+      liveUrl: "https://www.youtube.com/watch?v=C9oORRDyea0",
       category: "IOT"
     },
           {
