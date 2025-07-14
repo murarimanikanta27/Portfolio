@@ -112,7 +112,7 @@ export const Contact: React.FC = () => {
                   <Github className="text-purple-400" size={24} />
                 </a>
                 <a
-                  href="https://youtube.com/@RobicWorld"
+                  href="https://www.youtube.com/@ROBIC_WORLD"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 bg-white/10 hover:bg-white/20 rounded-lg transition-all duration-300 transform hover:scale-110"
